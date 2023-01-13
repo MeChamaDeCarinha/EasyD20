@@ -1,0 +1,15 @@
+body {
+    background-color: #8B0C9B;
+    color: #eaeaea;
+    font-family: 'Calibri Light', 'Gill Sans', 'Open Sans';
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #FF39EB;
+}
+
+h1 {
+    font-size: 35px;
+}
