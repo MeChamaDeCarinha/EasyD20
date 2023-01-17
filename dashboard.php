@@ -13,7 +13,7 @@
 
 <body>
     <t1>Conectado com sucesso: <?php echo $_SESSION['nick']?></t1>
-    <a href="logout.php">Sair</a>
+    <a href="PHP/logout.php">Sair</a>
 </body>
 
 </html>

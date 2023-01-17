@@ -17,9 +17,16 @@
 
         $_SESSION['id'] = $usuario['id'];
         $_SESSION['nick'] = $usuario['nick'];
+        $_SESSION['auth'] = true;
 
         header("Location: ../dashboard.php");
     }
     else{
+        if(!isset($_SESSION)){
+            session_start();
+        }
+        $_SESSION['auth'] = false;
+
+        header("Location: ../index.php");
     }
 ?>

@@ -65,6 +65,15 @@ input:focus{
     width: 450px;
 }
 
+#auth {
+    color: red;
+    position: relative;
+    top: -17px;
+    right: 115px;
+    margin-bottom: -15px;
+    min-height: 20px;
+}
+
 #logar, #cadastrar {
     position: relative;
     top: 20px;
