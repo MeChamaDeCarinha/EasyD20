@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyD20</title>
-    <link rel="stylesheet" href="CSS/index_.css">
+    <link rel="stylesheet" href="CSS/main.css">
 </head>
 
 <body>
@@ -17,13 +17,14 @@
                 <h1>EasyD20</h1>
             </div>
             <div id="divcadastro">
-                <form action="" method="POST">
-                    <input type="email" name="email" id="email" placeholder="Email">
+                <ul id="ullogin"><p id="ualogin">Login</p></ul>
+                <form action="PHP/login.php" method="POST">
+                    <input type="text" name="login" id="login" placeholder="Nome de usuário ou Email" autofocus required>
                     <br>
-                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required>
                     <br>
-                    <input type="submit" value="acessar" name="acessar" id="acessar">
-                    <p id="cadastro">Não cadastrado? <a href="">Cadastre-se aqui.</a></p>
+                    <p id="cadastrar"><a href="cadastro.php">Cadastre-se</a></p>
+                    <input type="submit" value="Acessar" name="acessar" id="acessar">
                 </form>
             </div>
         </div>

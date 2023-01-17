@@ -1,0 +1,132 @@
+a:link,
+a:visited,
+a:active {
+    color: #FF39EB;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+    position: relative;
+    top: -45px;
+    font-size: 50px;
+}
+
+body {
+    background-color: #181818;
+    color: #eaeaea;
+    font-family: 'Calibri Light', 'Gill Sans', 'Open Sans';
+}
+
+input {
+    font-family: 'Calibri Light', 'Gill Sans', 'Open Sans';
+    text-align: left;
+    font-size: 20px;
+    border: 15px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+}
+
+#logo {
+    height: 150px;
+}
+
+#email {
+    position: relative;
+    top: 25px;
+    width: 450px;
+}
+
+#login {
+    position: relative;
+    top: 25px;
+    width: 450px;
+}
+
+#senha {
+    position: relative;
+    top: 35px;
+    width: 450px;
+}
+
+#nome {
+    position: relative;
+    top: 15px;
+    width: 450px;
+}
+
+#logar, #cadastrar {
+    position: relative;
+    top: 20px;
+    left: 160px;
+}
+
+#ullogin {
+    background-color: #FF39EB;
+    position: relative;
+    width: 10px;
+    height: 20px;
+    right: 195px;
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: -15px;
+}
+
+#ulcadastro {
+    background-color: #FF39EB;
+    position: relative;
+    width: 10px;
+    height: 20px;
+    right: 195px;
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: -5px;
+}
+
+#ualogin {
+    font-size: 30px;
+    position: relative;
+    left: 15px;
+    top: -10px;
+}
+
+#uacadastro {
+    font-size: 30px;
+    position: relative;
+    left: 15px;
+    top: -10px;
+}
+
+#acessar {
+    background-color: #FF39EB;
+    padding:5px;
+    text-align:center;
+    width:150px;
+    height:50px;
+    position:relative;
+    top: 20px;
+}
+
+#divlogo {
+    position: relative;
+    top: 25px;
+}
+
+#divcadastro {
+    position: relative;
+    top: -50px;
+}
+
+#central{
+    width: fit-content;
+}
