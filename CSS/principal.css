@@ -68,8 +68,8 @@ input:focus{
 #auth {
     color: red;
     position: relative;
-    top: -17px;
-    right: 115px;
+    top: -16px;
+    right: 117px;
     margin-bottom: -15px;
     min-height: 20px;
 }
