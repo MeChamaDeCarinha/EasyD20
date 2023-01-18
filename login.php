@@ -41,7 +41,7 @@
                             echo "Login ou senha incorretos";
                         }
                         if (isset($_SESSION["singin"])) {
-                            echo "Usuário cadastrado faça login";
+                            echo "Usuário cadastrado, faça login";
                         }
                         session_destroy();
                     ?></p>

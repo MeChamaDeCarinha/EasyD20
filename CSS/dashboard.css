@@ -1,0 +1,35 @@
+body {
+    background-color: #181818;
+}
+
+#principal {
+    
+}
+
+#header {
+    background-color: blue;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    left: 80px;
+    margin: -8px;
+    border: solid 2px #BC77D6;
+}
+
+#navbar {
+    background-color: green;
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    margin: -8px;
+    border: solid 2px #BC77D6;
+}
+
+#content {
+    background-color: yellow;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 80px;
+    top: 60px;
+}

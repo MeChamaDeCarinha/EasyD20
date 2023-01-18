@@ -9,11 +9,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyD20 - Dashboard</title>
+    <link rel="stylesheet" href="CSS/dashboard.css">
 </head>
 
 <body>
-    <t1>Conectado com sucesso: <?php echo $_SESSION['nick']?></t1>
-    <a href="PHP/logout.php">Sair</a>
+    <div id="principal">
+    <div id="content"></div>
+        <div id="header"></div>
+        <div id="navbar"></div>
+        
+    </div>
+    <!--<a href="PHP/logout.php">Sair</a>-->
 </body>
 
 </html>

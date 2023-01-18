@@ -127,6 +127,7 @@ input:focus{
 }
 
 #divlogo {
+    vertical-align: middle;
     position: relative;
     top: 25px;
 }
