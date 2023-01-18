@@ -1,5 +1,5 @@
 <?php
-    require "PHP/protect.php";
+require "PHP/protect.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,12 +14,20 @@
 
 <body>
     <div id="principal">
-    <div id="content"></div>
-        <div id="header"></div>
-        <div id="navbar"></div>
+        <div id="content"></div>
+        <div id="header">
         
+            <div id="divlogo">
+                <a href="index.php" id="linklogo"><img id="logo" src="Images/Logo.png">
+                    <p id="textologo">EasyD20</p>
+                </a>
+            </div>
+            <a href="PHP/logout.php">Sair</a>
+
+        </div>
+        <div id="navbar"></div>
     </div>
-    <!--<a href="PHP/logout.php">Sair</a>-->
+    
 </body>
 
 </html>
