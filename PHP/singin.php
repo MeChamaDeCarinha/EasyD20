@@ -5,7 +5,7 @@
     $email = mysqli_real_escape_string($con, $_POST["email"]);
     $senha = mysqli_real_escape_string($con, $_POST["senha"]);
 
-    $sql = "select * from usuario where nick = '$nome'";
+    $sql = "select * from usuario where nome = '$nome'";
 
     $resultado = mysqli_query($con, $sql);
 
@@ -48,8 +48,10 @@
 
         die;
     }
+
+    $senha = password_hash($senha, PASSWORD_DEFAULT);
     
-    $sql = "insert into usuario(`nick`, `email`, `senha`) values ('$nome', '$email', '$senha')";
+    $sql = "insert into usuario(`nome`, `email`, `senha`) values ('$nome', '$email', '$senha')";
 
     mysqli_query($con, $sql);
 
