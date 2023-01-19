@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17-Jan-2023 às 05:04
--- Versão do servidor: 5.7.36
--- versão do PHP: 8.1.10
+-- Tempo de geração: 19-Jan-2023 às 17:37
+-- Versão do servidor: 10.4.27-MariaDB
+-- versão do PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,39 +29,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `usuario` (
   `id` int(11) NOT NULL,
-  `nick` varchar(24) NOT NULL,
+  `nome` varchar(24) NOT NULL,
   `email` varchar(48) NOT NULL,
-  `senha` varchar(16) NOT NULL,
+  `senha` varchar(255) NOT NULL,
   `bio` varchar(96) DEFAULT NULL,
   `idade` int(2) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `usuario`
 --
 
-INSERT INTO `usuario` (`id`, `nick`, `email`, `senha`, `bio`, `idade`) VALUES
-(1, 'admin', 'admin@gmail.com', 'admin', NULL, NULL);
-
---
--- Índices para tabelas despejadas
---
-
---
--- Índices para tabela `usuario`
---
-ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT de tabelas despejadas
---
-
---
--- AUTO_INCREMENT de tabela `usuario`
---
-ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+INSERT INTO `usuario` (`id`, `nome`, `email`, `senha`, `bio`, `idade`) VALUES
+(0, 'admin', 'admin@gmail.com', '$2y$10$VC4pCXfyLkscmCYjT3YtIeh5S7QTFh.bzzvyVIymKfk6zf6jU3SJK', NULL, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
