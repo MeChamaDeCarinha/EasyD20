@@ -4,6 +4,17 @@ a:active {
 
 }
 
+@media screen and (max-width: 1920px){
+    body{
+        zoom: 200%;
+    }
+}
+@media screen and (max-width: 1280px){
+    body{
+        zoom: 100%;
+    }
+}
+
 body {
     background-color: #181818;
 }
