@@ -1,0 +1,98 @@
+a:link,
+a:visited,
+a:active {
+
+}
+
+@media screen and (max-width: 1920px){
+    body{
+        zoom: 175%;
+    }
+}
+@media screen and (max-width: 1280px){
+    body{
+        zoom: 100%;
+    }
+}
+
+body {
+    background-color: #181818;
+    font-family: 'Calibri Light', 'Gill Sans', 'Open Sans';
+}
+
+#content {
+    background-color: #181818;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 64px;
+    top: 64px;
+}
+
+#header {
+    background-color: #61006D;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    left: 70px;
+    margin: -8px;
+    border: solid 2px #BC77D6;
+}
+
+#navbar {
+    background-color: #61006D;
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    margin: -8px;
+    border: solid 2px #BC77D6;
+}
+
+#header {
+    background-color: #61006D;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    left: 70px;
+    margin: -8px;
+    line-height: 46px;
+    border: solid 2px #BC77D6;
+    overflow: hidden;
+}
+  
+#header a {
+    position: relative;
+    float: left;
+    color: #eaeaea;
+    text-align: center;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 30px;
+}
+  
+#header a.logo {
+    top: -18px;
+    width: 155px;
+}
+
+#header a.aventuras {
+    top: -18px;
+    width: 35px;
+    left: 860px;
+}
+
+#header a.perfil {
+    top: -18px;
+    width: 22px;
+    left: 858px;
+    border-right: solid 2px #BC77D6 ;
+}
+
+#header img {
+    position: relative;
+    top: 16px;
+    left: -10px;
+    height: 45px;
+    padding: 0px;
+    margin: 0px;
+}

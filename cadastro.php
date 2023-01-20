@@ -29,7 +29,7 @@
     <center>
         <div id=central>
             <div id="divlogo">
-                <img id="logo" src="Images/Logo.png">
+                <img id="logo" src="Images/logo.png">
                 <h1>EasyD20</h1>
             </div>
             <div id="divcadastro">
