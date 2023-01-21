@@ -35,7 +35,7 @@
             <div id="divcadastro">
             <ul id="ulcadastro"><p id="uacadastro">Cadastro</p></ul>
                 <form action="PHP/singin.php" method="POST">
-                    <input type="text" name="nome" id="nome" placeholder="Nome de usuário" autofocus required>
+                    <input type="text" name="nome" id="nome" placeholder="Nome de usuário" autofocus autocomplete="off" required>
                     <br>
                     <input type="email" name="email" id="email" placeholder="Email" required>
                     <br>

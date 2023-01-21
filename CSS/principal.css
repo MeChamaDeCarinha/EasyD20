@@ -1,7 +1,7 @@
 a:link,
 a:visited,
 a:active {
-    color: #FF39EB;
+    color: #BC77D6;
 }
 
 @media screen and (max-width: 1920px){
@@ -92,7 +92,7 @@ input:focus{
 }
 
 #ullogin {
-    background-color: #FF39EB;
+    background-color: #BC77D6;
     position: relative;
     width: 10px;
     height: 20px;
@@ -103,7 +103,7 @@ input:focus{
 }
 
 #ulcadastro {
-    background-color: #FF39EB;
+    background-color: #BC77D6;
     position: relative;
     width: 10px;
     height: 20px;
@@ -128,7 +128,7 @@ input:focus{
 }
 
 #acessar {
-    background-color: #FF39EB;
+    background-color: #BC77D6;
     padding:5px;
     text-align:center;
     width:150px;

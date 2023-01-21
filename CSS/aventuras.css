@@ -1,0 +1,72 @@
+#geral {
+    font-family: 'Calibri Light', 'Gill Sans', 'Open Sans';
+    color: #BC77D6;
+    position: relative;
+    margin: auto;
+    top: 110px;
+}
+
+@media all and (display-mode: fullscreen) {
+    #geral {
+        top: 165px
+    }
+}
+
+h1 {
+    font-size: 45px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: lighter;
+}
+
+input{
+    text-align: left;
+    font-size: 20px;
+    border: 15px;
+    border-radius: 25px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+}
+
+#codigo {
+    position: relative;
+    top: 20px;
+    padding-left: 25px;
+    padding-right: 95px;
+}
+
+#codigo::placeholder {
+    color: #61006D;
+}
+
+#enviar {
+    background-color: rgba(0,0,0,0);
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    top: -15px;
+    left: 162px;
+}
+
+#enviar:hover {
+    background-color: #BC77D673;
+}
+
+#labelc {
+    color: #C6C6C6;
+    position: relative;
+    font-size: 30px;
+}
+
+#criar {
+    background-color: #BC77D6;
+    position: relative;
+    top: 15px;
+    padding-left: 65px;
+    padding-right: 65px;
+}

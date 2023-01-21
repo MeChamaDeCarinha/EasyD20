@@ -31,7 +31,7 @@
                     <p id="ualogin">Login</p>
                 </ul>
                 <form action="PHP/login.php" method="POST">
-                    <input type="text" name="login" id="login" placeholder="Nome de usuário ou Email" autofocus required>
+                    <input type="text" name="login" id="login" placeholder="Nome de usuário ou Email" autofocus autocomplete="off" required>
                     <br>
                     <input type="password" name="senha" id="senha" placeholder="Senha" required>
                     <br>

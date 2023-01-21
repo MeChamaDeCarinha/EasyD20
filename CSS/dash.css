@@ -16,11 +16,10 @@ a:active {
 }
 
 body {
-    background-color: #181818;
     font-family: 'Calibri Light', 'Gill Sans', 'Open Sans';
 }
 
-#content {
+#conteudo {
     background-color: #181818;
     position: fixed;
     height: 100%;
@@ -29,14 +28,9 @@ body {
     top: 64px;
 }
 
-#header {
-    background-color: #61006D;
-    position: fixed;
+#content {
     width: 100%;
-    height: 60px;
-    left: 70px;
-    margin: -8px;
-    border: solid 2px #BC77D6;
+    height: 100%;
 }
 
 #navbar {
@@ -46,6 +40,17 @@ body {
     width: 60px;
     margin: -8px;
     border: solid 2px #BC77D6;
+}
+
+#navbar {
+    background-color: #61006D;
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    margin: -8px;
+    line-height: 46px;
+    border: solid 2px #BC77D6;
+    overflow: hidden;
 }
 
 #header {
@@ -95,4 +100,59 @@ body {
     height: 45px;
     padding: 0px;
     margin: 0px;
+}
+
+#navbar a {
+    position: relative;
+}
+
+#navbar a.hamburger {
+    top: 13px;
+    left: 13px;
+}
+
+#navbar a.fichas {
+    top: 24px;
+    left: 17px;
+}
+
+#navbar a.mapas {
+    top: 26px;
+    left: 10px;
+}
+
+#navbar a.inv {
+    top: 35px;
+    left: 14px;
+}
+
+#navbar a.ajuda {
+    top: 265px;
+    left: 14px;
+}
+
+#navbar a.config {
+    top: 265px;
+    left: 13px;
+}
+
+@media all and (display-mode: fullscreen) {
+    #navbar a.ajuda{
+        top: 410px;
+    }
+    #navbar a.config{
+        top: 410px;
+    }
+}
+
+
+#navbar img {
+    position: relative;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.fa-solid {
+    color: #eaeaea;
 }
