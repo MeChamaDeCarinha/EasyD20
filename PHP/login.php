@@ -16,6 +16,7 @@
         }
 
         $_SESSION['id'] = $usuario['id'];
+        $_SESSION['nome'] = $usuario['nome'];
 
         header("Location: ../dashboard.php");
     }

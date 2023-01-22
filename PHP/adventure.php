@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EasyD20 - Nenhuma aventura</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
         <div id="geral">
             <h1>Não participa de nenhuma aventura?</h1>
             <form action="PHP/adventure.php" method="POST">
-                <input type="text" name="codigo" id="codigo" placeholder="Insira o código" autocomplete="off">
+                <input type="text" name="codigo" id="codigo" maxlength="6" placeholder="Insira o código" autocomplete="off">
                 <br>
                 <input type="submit" name="enviar" id="enviar" value="→">
                 <br>

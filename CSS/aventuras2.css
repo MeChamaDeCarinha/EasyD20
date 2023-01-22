@@ -1,0 +1,74 @@
+body {
+    font-family: 'Calibri Light', 'Gill Sans', 'Open Sans';
+}
+
+#aventura {
+
+    width: fit-content;
+    height: 350px;
+}
+
+#bgaventura {
+    width: fit-content;
+    height: 350px;
+}
+
+#imgaventura {
+    width: 400px;
+    height: 120px;
+    padding: 0px;
+    margin-left: 30px;
+    position: relative;
+    top: -330px;
+}
+
+#imgjogadores {
+    width: 30px;
+    position: relative;
+    top: -325px;
+    left: 30px;
+}
+
+#nome{
+    color: #eaeaea;
+    width: fit-content;
+    max-width: 450px;
+    margin: auto;
+    position: relative;
+    top: -330px;
+}
+
+#desc {
+    color: #BC77D6;
+    font-size: 20px;
+    height: 75px;
+    width: fit-content;
+    max-width: 390px;
+    margin: auto;
+    position: relative;
+    top: -330px;
+}
+
+#jogadores {
+    color: #eaeaea;
+    width: fit-content;
+    max-width: 340px;
+    font-size: 15px;
+    position: relative;
+    top: -369px;
+    left: 65px;
+}
+
+#quantidade {
+    color: #eaeaea;
+    font-size: 15px;
+    position: relative;
+    top: -395px;
+    left: 48px;
+}
+
+td {
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}

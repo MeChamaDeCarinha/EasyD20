@@ -19,6 +19,9 @@
         if($_SESSION['aventuras'] == 0){
             require "PHP/adventure.php";
         }
+        else if($_SESSION['aventuras'] >= 1){
+            require "PHP/adventures.php";
+        }
         else{
             echo $_SESSION['aventuras'];
         }

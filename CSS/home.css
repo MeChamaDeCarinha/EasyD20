@@ -1,0 +1,106 @@
+@media screen and (max-width: 1920px){
+    body{
+        zoom: 175%;
+    }
+}
+@media screen and (max-width: 1280px){
+    body{
+        zoom: 100%;
+    }
+}
+
+body {
+    font-family: 'Calibri Light', 'Gill Sans', 'Open Sans';
+    color: #BC77D6;
+}
+
+#conteudo {
+    background-color: #181818;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 64px;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    background-color: #61006D;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    margin: -8px;
+    line-height: 46px;
+    border: solid 2px #BC77D6;
+    overflow: hidden;
+}
+  
+#header a {
+    position: relative;
+    float: left;
+    color: #eaeaea;
+    text-align: center;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 30px;
+}
+  
+#header a.logo {
+    top: -18px;
+    width: 155px;
+}
+
+#header a.aventuras {
+    top: -18px;
+    width: 35px;
+    left: 918px;
+}
+
+#header a.perfil {
+    top: -18px;
+    width: 22px;
+    left: 920px;
+    border-right: solid 2px #BC77D6 ;
+}
+
+#header img {
+    position: relative;
+    top: 16px;
+    left: -10px;
+    height: 45px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#logo {
+    height: 200px;
+}
+
+#textologo {
+    font-size: 80px;
+    font-weight: lighter;
+    position: relative;
+    top: -70px
+}
+
+#divlogo {
+    vertical-align: middle;
+    position: relative;
+    top: 55px;
+}
+
+#bemvindo{
+    position: relative;
+    top: -140px;
+    font-size: 75px;
+}
+
+#nome {
+    background: -webkit-linear-gradient(29deg, rgba(188,119,214,1), rgba(97,0,109,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
