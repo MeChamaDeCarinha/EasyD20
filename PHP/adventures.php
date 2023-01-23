@@ -14,17 +14,59 @@
         <div>
             <table id="tabela">
                 <tr>
-                    <td>
-                        <div id="aventura">
-                            <img id="bgaventura" src="Images/aventurabg.png">
-                            <h1 id="nome">The crater</h1>
-                            <img id="imgaventura" src="Images/imgcrater.png">
-                            <p id="desc">Aventura baseada no livro D&D de 1985 que foi feita por Herobrine e de vez em quando o Notch ajudava</p>
-                            <img id="imgjogadores" src="Images/perfil.png">
-                            <p id="jogadores">MeChamaDeCarinha, Admin, Rafael...</p>
-                            <p id="quantidade">5</p>
-                        </div>
-                    </td>
+                    <?php
+                        require "conexao.php";
+                        $idjogador = $_SESSION['id'];
+                        $sql = "select * from participantes where cod_usuario = $id";
+                        $resultado = mysqli_query($con, $sql);
+                        $n = 1;
+                        while($participando = mysqli_fetch_assoc($resultado)){
+                            $jogadores = "";
+                            $idaventura = $participando['cod_aventura'];
+
+                            $sql = "select * from aventura where id = $idaventura";
+                            
+                            $aventura = mysqli_fetch_assoc(mysqli_query($con, $sql));
+                            $nome = $aventura['nome'];
+                            $desc = $aventura['descricao'];
+
+                            $sqlpartic = "select * from participantes where cod_aventura = $idaventura";
+                            $quantidade = mysqli_num_rows(mysqli_query($con, $sqlpartic));
+                            $resultadopartic = mysqli_query($con, $sqlpartic);
+
+                            while($jogador = mysqli_fetch_assoc($resultadopartic)){
+                                $idjog = $jogador['cod_usuario'];
+
+                                $sqlnome = "select * from usuario where id = $idjog";
+
+                                $jog = mysqli_fetch_assoc(mysqli_query($con, $sqlnome));
+
+                                $nomejog = $jog['nome'];
+
+                                $jogadores = $jogadores . ", $nomejog";
+                                $jogadores = substr($jogadores, 1, strlen($jogadores));
+                            }
+                            
+                            if($n % 2 != 0) {
+                                echo "<tr>";
+                            }
+                            echo "<td>";
+                            echo "<div id='aventura'>";
+                            echo "<img id='bgaventura' src='Images/aventurabg.png'>";
+                            echo "<h1 id='nome'>$nome</h1>";
+                            echo "<img id='imgaventura' src='Images/imgcrater.png'>";
+                            echo "<p id='desc'>$desc</p>";
+                            echo "<img id='imgjogadores' src='Images/perfil.png'>";
+                            echo "<p id='jogadores'>$jogadores</p>";
+                            echo "<p id='quantidade'>$quantidade</p>";
+                            echo "</div>";
+                            echo "</td>";
+                            if($n % 2 == 0) {
+                                echo "</tr>";
+                            }
+                            $n++;
+                        }
+                    ?>
                 </tr>
             </table>
         </div>

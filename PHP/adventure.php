@@ -12,7 +12,7 @@
     <center>
         <div id="geral">
             <h1>Não participa de nenhuma aventura?</h1>
-            <form action="PHP/adventure.php" method="POST">
+            <form action="PHP/codigo.php" method="POST">
                 <input type="text" name="codigo" id="codigo" maxlength="6" placeholder="Insira o código" autocomplete="off">
                 <br>
                 <input type="submit" name="enviar" id="enviar" value="→">

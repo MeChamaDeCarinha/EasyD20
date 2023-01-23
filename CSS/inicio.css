@@ -54,10 +54,41 @@ body {
     width: 155px;
 }
 
+#header a.login {
+    background-color: #00000025;
+    border: solid 1px #acacac;
+    border-radius: 100px;
+    height: 20px;
+    width: 165px;
+    top: 9px;
+    left: 605px;
+}
+
+#header a.singin {
+    background-color: #00000025;
+    border: solid 1px #acacac;
+    border-radius: 100px;
+    height: 20px;
+    width: 165px;
+    top: 9px;
+    left: 635px;
+}
+
+#header a.singin:hover,
+#header a.login:hover {
+    background-color: #61006D;
+    background-color: #eaeaea20;
+}
+
+#header p.texto {
+    position: relative;
+    top: -45px
+}
+
 #header a.aventuras {
     top: -18px;
     width: 35px;
-    left: 918px;
+    left: 922px;
 }
 
 #header a.perfil {

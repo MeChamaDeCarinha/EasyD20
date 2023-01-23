@@ -41,7 +41,7 @@
                     <br>
                     <input type="password" name="senha" id="senha" placeholder="Senha" required>
                     <br>
-                    <p id="logar"><a href="index.php">Faça login</a></p>
+                    <p id="logar"><a href="login.php">Faça login</a></p>
                     <p id="auth" name="auth"><?php
                         if (isset($_SESSION['nome'])) {
                             echo "Nome de usuário já em uso";
