@@ -2,8 +2,23 @@ body {
     font-family: 'Calibri Light', 'Gill Sans', 'Open Sans';
 }
 
-#aventura {
+#h1aventuras{
+    color: #eaeaea;
+    font-weight: lighter;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
+#alerta {
+    color: red;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+#aventura {
     width: fit-content;
     height: 350px;
 }

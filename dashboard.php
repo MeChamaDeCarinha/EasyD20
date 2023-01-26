@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyD20 - Dashboard</title>
-    <link rel="stylesheet" href="CSS/dashboard.css">
+    <link rel="stylesheet" href="CSS/dashboards.css">
 </head>
 
 <body>
@@ -25,10 +25,10 @@
                     echo '<div id="adiv">';
                     echo '<form action="PHP/codigo.php" method="POST">';
                     echo '<input type="text" name="acodigo" id="acodigo" maxlength="6" placeholder="Insira o código" autocomplete="off" required>';
-                    echo '<input type="submit" name="aenviar" id="aenviar" value="→">';
-                    echo '<input type="button" name="acriar" id="acriar" value="&#43">';
+                    echo '<input type="submit" name="aenviar" id="aenviar" value="→">'; 
                     echo '</form>';
                     echo '</div>';
+                    echo '<a class="acriar" href="PHP/criarAvent.php" target="content"><img src="Images/criar.png"></a>';
                     echo '<a class="aperfil" href=""><img src="Images/perfil.png"></a>';
                 }
                 else {

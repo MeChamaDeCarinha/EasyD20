@@ -87,6 +87,17 @@ body {
     border-right: solid 2px #BC77D6 ;
 }
 
+#header a.acriar {
+    top: -55px;
+    height: 0px;
+    width: 20px;
+    left: 880px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 11px;
+}
+
 #header a.aperfil {
     top: -64px;
     width: 22px;
@@ -197,22 +208,8 @@ input:focus{
     position: relative;
     top: 8px;
     left: -40px;
-
 }
 
 #aenviar:hover {
     background-color: #eaeaea50;
-}
-
-#acriar {
-    background-color: #BC77D6;
-    position: relative;
-    top: 8px;
-    left: -25px;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-#acriar:hover {
-    background-color: #cb9cdd;
 }
