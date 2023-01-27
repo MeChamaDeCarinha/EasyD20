@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyD20 - Login</title>
-    <link rel="stylesheet" href="CSS/principal.css">
+    <link rel="stylesheet" href="../../CSS/auth.css">
     <style>
         <?php
             if (!isset($_SESSION)) {
@@ -23,14 +23,14 @@
     <center>
         <div id=central>
             <div id="divlogo">
-                <img id="logo" src="Images/logo.png">
+                <img id="logo" src="../../Images/logo.png">
                 <h1>EasyD20</h1>
             </div>
             <div id="divcadastro">
                 <ul id="ullogin">
                     <p id="ualogin">Login</p>
                 </ul>
-                <form action="PHP/login.php" method="POST">
+                <form action="login.php" method="POST">
                     <input type="text" name="login" id="login" placeholder="Nome de usuário ou Email" autofocus autocomplete="off" required>
                     <br>
                     <input type="password" name="senha" id="senha" placeholder="Senha" required>

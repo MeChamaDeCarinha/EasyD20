@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,8 @@
 
 <body>
     <?php
-        require "conexao.php";
-        require "protect.php";
+        require "../conexao.php";
+        require "../protect.php";
 
         $id_usuario = $_SESSION['id'];
         $id_aventura = $_GET['id_aventura'];
@@ -21,7 +21,7 @@
         $resultado = mysqli_fetch_assoc(mysqli_query($con, $sql));
 
         if($resultado['mestrando'] == true){
-            require "";
+
         }
         else if($resultado['mestrando'] == false){
             echo "Você não é mestre";

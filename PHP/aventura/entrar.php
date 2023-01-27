@@ -1,6 +1,9 @@
 <?php 
-    require "conexao.php";
-    require "protect.php";
+    require "../conexao.php";
+
+    if(!isset($_SESSION)){
+        session_start();
+    }
 
     $id = $_SESSION['id'];
     

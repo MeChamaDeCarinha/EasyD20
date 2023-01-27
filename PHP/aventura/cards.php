@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyD20 - Aventuras</title>
-    <link rel="stylesheet" href="CSS/aventuras2.css">
+    <link rel="stylesheet" href="../../CSS/aventura/cards.css">
 </head>
 
 <body>
@@ -23,8 +23,9 @@
             <table id="tabela">
                 <tr>
                     <?php
-                        require "conexao.php";
+                        require "../conexao.php";
                         require "functions.php";
+
                         $idjogador = $_SESSION['id'];
                         $sql = "select * from participantes where cod_usuario = $id";
                         $resultado = mysqli_query($con, $sql);
@@ -62,14 +63,14 @@
                             }
                             echo "<td>";
                             echo "<div id='aventura'>";
-                            echo "<img id='bgaventura' src='Images/aventurabg.png'>";
+                            echo "<img id='bgaventura' src='../../Images/aventura/background.png'>";
                             echo "<h1 id='nome'>$nome</h1>";
-                            echo "<img id='imgaventura' src='Images/aventura/" . imgdef($idimg) . "'>";
+                            echo "<img id='imgaventura' src='../../Images/aventura/cards/" . imgdef($idimg) . "'>";
                             echo "<p id='desc'>$desc</p>";
-                            echo "<img id='imgjogadores' src='Images/perfil.png'>";
+                            echo "<img id='imgjogadores' src='../../Images/perfil/icone.png'>";
                             echo "<p id='jogadores'>$jogadores</p>";
                             echo "<p id='quantidade'>$quantidade</p>";
-                            echo "<a id='expandir' href='PHP/detalharAvent.php/?id_aventura=$idaventura'>⋯</a>";
+                            echo "<a id='expandir' href='detalharAVT.php/?id_aventura=$idaventura'>⋯</a>";
                             echo "<a id='selecionar' href=''>→</a>";
                             echo "</div>";
                             echo "</td>";

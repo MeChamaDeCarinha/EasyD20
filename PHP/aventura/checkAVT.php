@@ -1,5 +1,10 @@
 <?php
-    require "conexao.php";
+    $server = "localhost";
+    $user = "root";
+    $pass = "";
+    $banco = "EasyD20";
+
+    $con = mysqli_connect($server, $user, $pass, $banco);
 
     if(!isset($_SESSION)){
         session_start();

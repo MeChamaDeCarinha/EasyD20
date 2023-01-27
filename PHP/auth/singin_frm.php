@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyD20 - Cadastro</title>
-    <link rel="stylesheet" href="CSS/principal.css">
+    <link rel="stylesheet" href="../../CSS/auth.css">
     <style>
         <?php
             if (!isset($_SESSION)) {
@@ -29,12 +29,12 @@
     <center>
         <div id=central>
             <div id="divlogo">
-                <img id="logo" src="Images/logo.png">
+                <img id="logo" src="../../Images/logo.png">
                 <h1>EasyD20</h1>
             </div>
             <div id="divcadastro">
             <ul id="ulcadastro"><p id="uacadastro">Cadastro</p></ul>
-                <form action="PHP/singin.php" method="POST">
+                <form action="singin.php" method="POST">
                     <input type="text" name="nome" id="nome" placeholder="Nome de usuário" autofocus autocomplete="off" required>
                     <br>
                     <input type="email" name="email" id="email" placeholder="Email" required>

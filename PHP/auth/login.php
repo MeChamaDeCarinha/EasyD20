@@ -1,5 +1,5 @@
 <?php
-    require "conexao.php";
+    require "../conexao.php";
     
     $login = mysqli_real_escape_string($con, $_POST["login"]);
     $senha = mysqli_real_escape_string($con, $_POST["senha"]);
@@ -27,6 +27,6 @@
         
         $_SESSION['auth'] = false;
 
-        header("Location: ../login.php");
+        header("Location: login_frm.php");
     }
 ?>

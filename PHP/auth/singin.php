@@ -1,5 +1,5 @@
 <?php
-    require "conexao.php";
+    require "../conexao.php";
     
     $nome = mysqli_real_escape_string($con, $_POST["nome"]);
     $email = mysqli_real_escape_string($con, $_POST["email"]);
@@ -16,7 +16,7 @@
         
         $_SESSION['nome'] = false;
 
-        header("Location: ../cadastro.php");
+        header("Location: singin_frm.php");
 
         die;
     }
@@ -32,7 +32,7 @@
         
         $_SESSION['email'] = false;
 
-        header("Location: ../cadastro.php");
+        header("Location: singin_frm.php");
 
         die;
     }
@@ -44,7 +44,7 @@
         
         $_SESSION['senha'] = false;
 
-        header("Location: ../cadastro.php");
+        header("Location: singin_frm.php");
 
         die;
     }
@@ -61,5 +61,5 @@
 
     $_SESSION['singin'] = true;
 
-    header("Location: ../login.php");
+    header("Location: login_frm.php");
 ?>
