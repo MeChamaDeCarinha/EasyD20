@@ -43,7 +43,7 @@ if (!isset($_SESSION)) {
                 } 
                 else {
                     echo "<a class='login' href='login.php'><p class='texto'>Entre</p></a>";
-                    echo "<a class='singin' href='cadastro.php'><p class='texto'>Cadastre-se</p></a>";
+                    echo "<a class='singin' href=singin.php'><p class='texto'>Cadastre-se</p></a>";
                 }
             ?>
         </div>

@@ -27,6 +27,6 @@
         
         $_SESSION['auth'] = false;
 
-        header("Location: ../index.php");
+        header("Location: ../login.php");
     }
 ?>

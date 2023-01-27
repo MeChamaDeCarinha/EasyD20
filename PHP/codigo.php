@@ -4,7 +4,7 @@
 
     $id = $_SESSION['id'];
     
-    $codigo = $_POST['codigo'];
+    $codigo = $_POST['acodigo'];
 
     $sql = "select * from aventura where cod = $codigo";
 
@@ -21,8 +21,13 @@
         if(mysqli_num_rows($resultado) == 0){
             $sql = "insert into participantes(cod_usuario, cod_aventura) values ($id, $id_aventura)";
             mysqli_query($con, $sql);
-
-            header("Location: aventuras.php");
+        }
+        else {
+            $_SESSION['alerta'] = "Você já participa dessa aventura.";
         }
     }
+    else {
+        $_SESSION['alerta'] = "Esse código não pertence a nenhuma aventura.";
+    }
+    header("Location: ../dashboard.php");
 ?>

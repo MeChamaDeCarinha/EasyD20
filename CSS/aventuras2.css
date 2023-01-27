@@ -38,10 +38,10 @@ body {
 }
 
 #imgjogadores {
-    width: 30px;
+    width: 33px;
     position: relative;
-    top: -325px;
-    left: 30px;
+    top: -330px;
+    left: 27px;
 }
 
 #nome{
@@ -70,7 +70,7 @@ body {
     max-width: 340px;
     font-size: 15px;
     position: relative;
-    top: -369px;
+    top: -375px;
     left: 65px;
 }
 
@@ -78,8 +78,37 @@ body {
     color: #eaeaea;
     font-size: 15px;
     position: relative;
-    top: -395px;
-    left: 48px;
+    top: -401px;
+    left: 47px;
+}
+
+#expandir {
+    position: relative;
+    top: -442px;
+    left: 360px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #BC77D6;
+    border: solid 2px #BC77D6;
+    border-radius: 100px;
+    padding: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin: 0px;
+}
+
+#selecionar {
+    position: relative;
+    top: -444px;
+    left: 370px;
+    text-decoration: none;
+    color: #BC77D6;
+    border: solid 2px #BC77D6;
+    border-radius: 100px;
+    padding: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0px;
 }
 
 td {
