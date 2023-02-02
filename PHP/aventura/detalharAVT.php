@@ -21,12 +21,11 @@
         $resultado = mysqli_fetch_assoc(mysqli_query($con, $sql));
 
         if($resultado['mestrando'] == true){
-
+            require "detalharAVTm.php";
         }
         else if($resultado['mestrando'] == false){
-            echo "Você não é mestre";
+            require "detalharAVTj.php";
         }
-
     ?>
 </body>
 

@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyD20 - Home</title>
-    <link rel="stylesheet" href="CSS/index/index.css">
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 
 <body>
@@ -38,12 +38,12 @@
             <a class="logo" href=""><img src="Images/Logo.png">EasyD20</a>
             <?php
                 if (isset($_SESSION['id'])) {
-                    echo "<a class='aventuras' href='dashboard.php'><img src='Images/aventura/icone.png'></a>";
+                    echo "<a class='aventuras' href='PHP/dashboard.php'><img src='Images/aventura/icone.png'></a>";
                     echo "<a class='perfil' href=''><img src='Images/perfil/icone.png'></a>";
-                } 
+                }
                 else {
                     echo "<a class='login' href='PHP/auth/login_frm.php'><p class='texto'>Entre</p></a>";
-                    echo "<a class='singin' href=PHP/auth/singin_frm.php.php'><p class='texto'>Cadastre-se</p></a>";
+                    echo "<a class='singin' href='PHP/auth/singin_frm.php'><p class='texto'>Cadastre-se</p></a>";
                 }
             ?>
         </div>

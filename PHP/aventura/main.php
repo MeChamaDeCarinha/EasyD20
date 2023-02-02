@@ -17,7 +17,7 @@
 <body>
     <?php 
         if($_SESSION['aventuras'] == 0){
-            require "entrar.php";
+            require "entrar_frm.php";
         }
         else if($_SESSION['aventuras'] >= 1){
             require "cards.php";

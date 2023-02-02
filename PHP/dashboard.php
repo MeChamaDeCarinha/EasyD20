@@ -1,6 +1,10 @@
 <?php
     require "protect.php";
     require "aventura/checkAVT.php";
+
+    header('Cache-Control: no-store, no-cache, must-revalidate');
+    header('Cache-Control: post-check=0, pre-check=0', false);
+    header('Pragma: no-cache')
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +24,7 @@
             <iframe id="content" name="content" src="aventura/main.php" frameborder="0"></iframe>
         </div>
         <div id="header">
-            <a class="logo" href="index.php"><img src="../Images/Logo.png">EasyD20</a>
+            <a class="logo" href="../index.php"><img src="../Images/Logo.png">EasyD20</a>
             <?php
                 if($_SESSION['aventuras'] != 0){
                     echo '<div id="adiv">';
@@ -33,8 +37,8 @@
                     echo '<a class="aperfil" href=""><img src="../Images/perfil/icone.png"></a>';
                 }
                 else {
-                    echo "<a class='aventuras' href='aventuras.php' target='content'><img src='Images/aventuras.png'></a>";
-                    echo '<a class="perfil" href=""><img src="Images/perfil.png"></a>';
+                    echo "<a class='aventuras' href='/aventura/entrar_frm.php' target='content'><img src='../Images/aventura/icone.png'></a>";
+                    echo '<a class="perfil" href=""><img src="../Images/perfil/icone.png"></a>';
                 }
             ?>
         </div>

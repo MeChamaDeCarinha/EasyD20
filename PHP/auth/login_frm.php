@@ -35,7 +35,7 @@
                     <br>
                     <input type="password" name="senha" id="senha" placeholder="Senha" required>
                     <br>
-                    <p id="cadastrar"><a href="singin.php">Cadastre-se</a></p>
+                    <p id="cadastrar"><a href="singin_frm.php">Cadastre-se</a></p>
                     <p id="auth" name="auth"><?php
                         if (isset($_SESSION["auth"])) {
                             echo "Login ou senha incorretos";

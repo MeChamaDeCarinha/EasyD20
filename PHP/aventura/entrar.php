@@ -1,13 +1,15 @@
 <?php 
     require "../conexao.php";
-
-    if(!isset($_SESSION)){
-        session_start();
-    }
+    require "checkAVT.php";
 
     $id = $_SESSION['id'];
     
-    $codigo = $_POST['acodigo'];
+    if(isset($_POST['acodigo'])){
+        $codigo = $_POST['acodigo'];
+    }
+    else if(isset($_POST['codigo'])){
+        $codigo = $_POST['codigo'];
+    }
 
     $sql = "select * from aventura where cod = $codigo";
 
@@ -32,5 +34,11 @@
     else {
         $_SESSION['alerta'] = "Esse código não pertence a nenhuma aventura.";
     }
-    header("Location: ../dashboard.php");
+
+    if($_SESSION['aventuras'] != 0){
+        header("Location: ../dashboard.php");
+    }
+    else{
+        header("Location: main.php");
+    }
 ?>
