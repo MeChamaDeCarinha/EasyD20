@@ -6,16 +6,6 @@
 
 🗺 - São José do Rio Preto, São Paulo.
 
-
-## Autores
-
-- [@Leonardo Santos](https://github.com/MeChamaDeCarinha/)
-
-- [@Rafael Libralão](https://github.com/rafaellibralao)
-
-- [@Luiz Felipe](https://github.com/LuizFelipe512)
-
-
 ## 🎯 Alvos do projeto
 
 Trazer o RPG de mesa para perto do mundo digital sem comprometer a liberdade e criatividade do jogador.
@@ -26,3 +16,12 @@ Trazer o RPG de mesa para perto do mundo digital sem comprometer a liberdade e c
 **Front-end:** HTML e CSS
 
 **Back-end:** PHP
+
+
+## Autores
+
+- [@Leonardo Santos](https://github.com/MeChamaDeCarinha/)
+
+- [@Rafael Libralão](https://github.com/rafaellibralao)
+
+- [@Luiz Felipe](https://github.com/LuizFelipe512)
