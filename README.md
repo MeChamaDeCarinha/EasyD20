@@ -1,4 +1,4 @@
-# Bem vindo ao repositório do meu TCC
+# 🎲 EasyD20
 
 ❓ - Trabalho de conclusão de curso em Desenvolvimento de Sistemas.
 
@@ -6,19 +6,20 @@
 
 🗺 - São José do Rio Preto, São Paulo.
 
-## 🎯 Alvos do projeto
+
+## 🎯 Alvos 
 
 Trazer o RPG de mesa para perto do mundo digital sem comprometer a liberdade e criatividade do jogador.
 
 
-## Stack utilizada
+## 👩🏽‍💻 Stack utilizada
 
 **Front-end:** HTML e CSS
 
 **Back-end:** PHP
 
 
-## Autores
+## 🧑🏽 Autores
 
 - [@Leonardo Santos](https://github.com/MeChamaDeCarinha/)
 
