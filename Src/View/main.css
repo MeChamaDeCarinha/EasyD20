@@ -1,0 +1,43 @@
+body {
+    background-color: #181818;
+    margin: 0px;
+    font-family: 'Calibri Light';
+    color: #eaeaea;
+}
+
+a {
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100vw;
+    height: 9vh;
+
+    background-color: #61006D;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    box-sizing: border-box;
+    border: solid 0.2vw #BC77D6;
+}
+
+.navbar a {
+    position: relative;
+    right: 0.5vw;
+    font-size: 2vw;
+
+    text-align: center;
+    min-width: 15vw;
+    margin: 0.5vw;
+
+    box-sizing: border-box;
+    border: solid 0.2vw #BC77D6;
+    border-radius: 15vw;
+}
+
+.navbar a:hover {
+    background-color: #eaeaea25;
+}
