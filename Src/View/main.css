@@ -1,5 +1,5 @@
 body {
-    background-color: #181818;
+    background-color: #202020;
     margin: 0px;
     font-family: 'Calibri Light';
     color: #eaeaea;
@@ -12,32 +12,63 @@ a {
 
 .navbar {
     width: 100vw;
-    height: 9vh;
+    height: 10vh;
 
-    background-color: #61006D;
+    background-color: #121212;
 
     display: flex;
     justify-content: right;
     align-items: center;
 
     box-sizing: border-box;
-    border: solid 0.2vw #BC77D6;
+    border-bottom: solid 0.2vw #BC77D6;
 }
 
 .navbar a {
+    background-color: #282828;
+
+    font-size: 1.8vmax;
+
     position: relative;
     right: 0.5vw;
-    font-size: 2vw;
+    top: 0.1vh;    
 
     text-align: center;
-    min-width: 15vw;
-    margin: 0.5vw;
+    vertical-align: middle;
+    min-width: 13vw;
+    max-height: 6.5vh;
 
     box-sizing: border-box;
-    border: solid 0.2vw #BC77D6;
     border-radius: 15vw;
+    margin: 0.5vw;
+    padding-top: 0.2vh;
+}
+
+.navbar a:first-child {
+    background-color: transparent;
+
+    right: 60vw;
+
+    min-width: 11vw;
+
+    padding-top: 0vh;
+}
+
+.navbar span {
+    position: relative;
+    top: 0.3vh;
+    margin-left: 1vh;
 }
 
 .navbar a:hover {
     background-color: #eaeaea25;
+}
+
+.navbar a:hover:first-child {
+    background-color: transparent;
+}
+
+.logo img {
+    vertical-align: middle;
+    width: 7vh;
 }
