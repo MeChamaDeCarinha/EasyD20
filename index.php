@@ -8,4 +8,8 @@ $roteador->namespace("Src\Controller");
 $roteador->group(null);
 $roteador->get("/", "main:init");
 
+$roteador->group("dashboard");
+$roteador->get("/", "dashboard:init");
+
+
 $roteador->dispatch();

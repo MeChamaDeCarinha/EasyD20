@@ -1,0 +1,150 @@
+body {
+    background-color: #202020;
+    font-family: 'Calibri Light';
+    color: #eaeaea;
+    margin: 0vw;
+
+    height: 100vh;
+}
+
+.sidebar {
+    color: transparent;
+
+    position: fixed;
+    width: 12vw;
+    height: 100vh;
+
+    z-index: 1;
+
+    background-color: #121212;
+
+    box-sizing: border-box;
+    border-right: solid 0.2vw #BC77D6;
+}
+
+.sidebar:hover {
+    animation-name: expand;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.sidebar:not(:hover) {
+    animation-name: retract;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.logo {
+    position: relative;
+    left: -0.35vw;
+    top: 0.1vw;
+    width: 2.2vw;
+    object-fit: contain;
+    padding: 0.2vw;
+}
+
+.icons {
+    position: relative;
+    left: -0.1vw;
+    top: 0.2vh;
+
+    max-height: 3.5vw;
+    width: auto;
+
+    vertical-align: middle;
+
+    padding: 0.1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+
+    margin: 1vw;
+
+    border: none;
+    border-radius: 50vw;
+}
+
+.icons:hover {
+    cursor: pointer;
+    background-color: #eaeaea25;
+}
+
+.label {
+    position: absolute;
+    top: 0.7vw;
+
+    font-size: 1.2vmax;
+
+    width: auto;
+
+    padding-left: 0.5vw;
+}
+
+.label-logo {
+    position: absolute;
+    top: 0.6vw;
+
+    font-size: 1.2vw;
+
+    padding-left: 0.4vw;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    left: -0.27vw;
+    top: 0.17vw;
+
+    color: #BC77D6;
+    font-size: 2.5vmax;
+
+    width: min-content;
+
+    text-align: center;
+    padding: 0vw;
+}
+
+.label::selection, .material-symbols-outlined::selection, .label-logo::selection, .logo::selection {
+    background: transparent;
+}
+
+.content {
+    background-color: #eaeaea50;
+    position: fixed;
+    left: 5vw;
+
+    width: 95vw;
+    height: 100vh;
+}
+
+@keyframes expand {
+    0% {
+        width: 5vw;
+    }
+
+    50% {
+        color: transparent;
+    }
+
+    100% {
+        width: 12vw;
+        color: #eaeaea;
+    }
+}
+
+@keyframes retract {
+    0% {
+        width: 12vw;
+        color: #eaeaea;
+    }
+
+    50% {
+        color: transparent;
+    }
+
+    100% {
+        width: 5vw;
+        color: transparent;
+    }
+}
