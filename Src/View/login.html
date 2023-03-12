@@ -22,7 +22,11 @@
         <div class="container-form">
             <p class="label-action">{{action}}</p>
 
-            <form action="saaa" method="post">
+            {% if action == "Login" %}
+                <form action="{{url}}/login" method="post">
+            {% else %}
+                <form action="{{url}}/signup" method="post">
+            {% endif %}
                 <div class="container-input">
                     
                     {% if action == "Login" %}
@@ -43,6 +47,10 @@
                     {% else %}
                         <a href="{{url}}/login" class="label-change">Conecte-se aqui</a>
                     {% endif %}
+
+                    <div class="container-alert">
+                        <p class="alert">{{alert}}</p>
+                    </div>
                 </div>
             </form>
         </div>

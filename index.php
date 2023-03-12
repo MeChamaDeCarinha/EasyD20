@@ -10,9 +10,11 @@ $roteador->get("/", "main:loadTemplate");
 
 $roteador->group("login");
 $roteador->get("/", "user:loadTemplateLogin");
+$roteador->post("/", "user:login");
 
 $roteador->group("signup");
 $roteador->get("/", "user:loadTemplateSignup");
+$roteador->post("/", "user:signup");
 
 $roteador->group("dashboard");
 $roteador->get("/", "dashboard:loadTemplate");

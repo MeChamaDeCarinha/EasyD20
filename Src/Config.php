@@ -1,8 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-define("DB_LOGIN", "root");
-define("DB_SENHA", "1234");
-define("DB_URL", "mysql:host=127.0.0.1;dbname=pw3");
+define("DB", "EasyD20");
+define("DB_USER", "root");
+define("DB_SENHA", "");
+define("DB_URL", "localhost");
 
 define("URL", "http://localhost/EasyD20");

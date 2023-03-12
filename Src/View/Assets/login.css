@@ -21,7 +21,7 @@ span:hover{
     cursor: default;
 }
 
-span::selection, img::selection, p::selection, input::selection, br::selection, a::selection {
+span::selection, img::selection, p::selection, br::selection, a::selection {
     background-color: transparent;
 }
 
@@ -160,4 +160,18 @@ input:focus{
     position: relative;
     top: 0.6vmin;
     font-size: 4vmin;
+}
+
+.container-alert{
+    position: relative;
+    top: 2vmin;
+    width: fit-content;
+    margin: auto;
+    color: rgb(248, 91, 117);
+}
+
+.alert {
+    font-size: 3vmin;
+    width: 100%;
+    text-align: center;    
 }

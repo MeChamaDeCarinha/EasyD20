@@ -10,7 +10,7 @@ a {
     text-decoration: none;
 }
 
-span::selection, img::selection, p::selection, input::selection, br::selection, a::selection {
+span::selection, img::selection, p::selection, br::selection, a::selection {
     background-color: transparent;
 }
 

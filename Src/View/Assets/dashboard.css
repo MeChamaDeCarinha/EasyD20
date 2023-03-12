@@ -7,8 +7,67 @@ body {
     height: 100vh;
 }
 
-span::selection, img::selection, p::selection, input::selection, br::selection, a::selection {
+span::selection, img::selection, p::selection, br::selection, a::selection {
     background-color: transparent;
+}
+
+.splash {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    width: 1000vmin;
+    height: 1000vmin;
+
+    background-color: #BC77D6;
+    border-radius: 100%;
+
+    margin-top: -500vmin;
+    margin-left: -500vmin;
+
+    z-index: 10;
+
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.splash-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    height: 20vmin;
+
+    margin-top: -10vmin;
+    margin-left: -10vmin;
+}
+
+@keyframes load {
+    0% {
+        width: 500vmin;
+        height: 500vmin;
+
+        margin-top: -250vmin;
+        margin-left: -250vmin;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 30vmin;
+        height: 30vmin;
+
+        margin-top: -15vmin;
+        margin-left: -15vmin;
+
+        opacity: 0;
+    }
 }
 
 .sidebar {
