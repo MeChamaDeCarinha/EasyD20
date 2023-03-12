@@ -3,10 +3,14 @@
 namespace Src\Controller;
 
 class main {
-    public function init() {
+    public function loadTemplate() {
         $carregador = new \Twig\Loader\FilesystemLoader("./Src/View");
         $ambiente = new \Twig\Environment($carregador);
 
-        echo $ambiente->render("main.html");
+        $dados = array(
+            "url" => URL
+        );
+
+        echo $ambiente->render("main.html", $dados);
     }
 }

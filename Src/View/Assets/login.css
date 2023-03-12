@@ -1,0 +1,155 @@
+body {
+    background-color: #121212;
+    height: 100dvh;
+    font-family: 'Calibri Light';
+    color: #eaeaea;
+    margin: 0vw;
+
+
+}
+
+a {
+    color: #BC77D6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #BC77D6;
+}
+
+.container {
+    background-color: #202020;
+    position: relative;
+    top: 15vh;
+
+    font-size: 5vmin;
+
+    width: 35vw;
+    height: 70vh;
+    
+    border-radius: 1vmin;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: 10vh 15vh 3vh;
+}
+
+.container-logo {
+    position: relative;
+    top: 12vmin;
+
+    font-size: 4.5vmin;
+
+    display: flex;
+
+    align-items: center;
+    align-self: center;
+
+    justify-content: center;
+
+    height: 10vh;
+}
+
+.logo {
+    height: 10vh;
+}
+
+.label-logo {
+    padding: 0vmin;
+    padding-left: 2vmin;
+}
+
+.label-action {
+    position: relative;
+    left: 5.5vmin;
+
+    width: max-content;
+
+    margin: 0vh;
+    padding: 0vh;
+}
+
+.container-form {
+    position: absolute;
+    top: 25vh;
+    width: 100%;
+}
+
+.container-input{
+    position: relative;
+    width: min-content;
+    margin: auto;
+}
+
+input {
+    position: relative;
+    font-family: 'Calibri Light';
+    font-size: 3vmin;
+
+    height: 5vmin;
+    width: 30vw;
+
+    border: none;
+    border-radius: 5vmin;
+
+    margin-top: 2vmin;
+
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+}
+
+input:focus{
+    outline: none;
+}
+
+.submit {
+    background-color: #BC77D6;
+    width: 20vmin;
+    float: right;
+}
+
+.submit:hover {
+    background-color: #a364b9;
+    cursor: pointer;
+}
+
+.label-change {
+    position: relative;
+    margin-left: 2vh;
+    font-size: 3vmin;
+}
+
+.label-change:hover {
+    color: #a364b9;
+}
+
+.container-return {
+    position: absolute;
+    top: 2vmin;
+    left: 2vmin;
+
+    height: min-content;
+    width: 15vmin;
+
+    padding-bottom: 0.6vmin;
+    padding-right: 1vmin;
+    padding-left: 1vmin;
+}
+
+.container-return:hover {
+    background-color: #eaeaea20;
+    border-radius: 10vmin;
+    cursor: pointer;
+}
+
+.label-return {
+    font-size: 4vmin;
+    padding: 0vh;
+    margin: 0vh;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    top: 0.6vmin;
+    font-size: 4vmin;
+}

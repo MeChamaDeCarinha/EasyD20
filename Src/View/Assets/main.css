@@ -21,13 +21,13 @@ a {
     align-items: center;
 
     box-sizing: border-box;
-    border-bottom: solid 0.2vw #BC77D6;
+    border-bottom: solid 0.5vh #BC77D6;
 }
 
 .navbar a {
     background-color: #282828;
 
-    font-size: 1.8vmax;
+    font-size: 3.6vmin;
 
     position: relative;
     right: 0.5vw;

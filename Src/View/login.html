@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>EasyD20 - Login</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./Src/View/Assets/login.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="container-logo">
+            <img class="logo" src="./Src/View/Images/logo.png">
+            <span class="label-logo">EasyD20</span>
+        </div>
+        <div class="container-form">
+            <p class="label-action">{{action}}</p>
+
+            <form action="saaa" method="post">
+                <div class="container-input">
+                    
+                    {% if action == "Login" %}
+                        <input type="text" name="name" id="name" placeholder="Nome de usuário ou Email" autofocus autocomplete="off" required>
+                        <br>
+                    {% else %}
+                        <input type="text" name="name" id="name" placeholder="Nome de usuário" autofocus autocomplete="off" required>
+                        <br>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <br>
+                    {% endif %}
+
+                    <input type="password" name="password" id="password" placeholder="Senha" required>
+                    <input type="submit" value="{{action}}" name="submit" class="submit">
+
+                    {% if action == "Login" %}
+                        <a href="{{url}}/signup" class="label-change">Cadastre-se aqui</a>
+                    {% else %}
+                        <a href="{{url}}/login" class="label-change">Conecte-se aqui</a>
+                    {% endif %}
+                </div>
+            </form>
+        </div>
+        <div class="container-return">
+            <a class="label-return" href="http://localhost/EasyD20/"><span class="material-symbols-outlined">arrow_back</span> Voltar</a>
+        </div>
+    </div>
+</body>
+
+</html>

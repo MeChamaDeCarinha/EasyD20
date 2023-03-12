@@ -3,7 +3,7 @@
 namespace Src\Controller;
 
 class dashboard {
-    public function init() {
+    public function loadTemplate() {
         $carregador = new \Twig\Loader\FilesystemLoader("./Src/View");
         $ambiente = new \Twig\Environment($carregador);
 
