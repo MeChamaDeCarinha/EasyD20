@@ -7,6 +7,10 @@ body {
     height: 100vh;
 }
 
+span::selection, img::selection, p::selection, input::selection, br::selection, a::selection {
+    background-color: transparent;
+}
+
 .sidebar {
     color: transparent;
 

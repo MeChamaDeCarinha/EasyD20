@@ -17,6 +17,14 @@ a:hover {
     color: #BC77D6;
 }
 
+span:hover{
+    cursor: default;
+}
+
+span::selection, img::selection, p::selection, input::selection, br::selection, a::selection {
+    background-color: transparent;
+}
+
 .container {
     background-color: #202020;
     position: relative;
